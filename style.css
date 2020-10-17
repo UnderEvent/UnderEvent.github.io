@@ -1,5 +1,8 @@
-body {background-color: #000000;}
-
+body {
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
 @font-face {
     font-family: myFirstFont;
     src: url(8bitOperatorPlus8-Regular.ttf);
