@@ -16,7 +16,6 @@ p {
     font-family: myFirstFont;
     font-size: 30px;
     padding: 30px;
-    word-wrap: break-word;
     display: flex;
     flex-wrap: wrap;
     max-width: 50%; 
