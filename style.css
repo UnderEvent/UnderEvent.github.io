@@ -1,0 +1,55 @@
+body {background-color: #000000;}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(8bitOperatorPlus8-Regular.ttf);
+}
+
+h1 {
+    font-family: myFirstFont;
+    font-size: 100px;
+    padding: 30px;
+    word-wrap: break-word;
+}
+
+p {
+    font-family: myFirstFont;
+    font-size: 30px;
+    padding: 30px;
+    word-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%; 
+    max-height: 100%;
+}
+
+div {
+    padding: 30px;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+button {
+    background-color: #666699;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: myFirstFont;
+    font-size: 60px;
+}
+
+a {
+    font-family: myFirstFont;
+    font-size: 30px;
+    padding: 30px;
+    word-wrap: break-word;
+}
