@@ -4,6 +4,7 @@ body {
     background-size:contain;
     background-position:center;
 }
+
 @font-face {
     font-family: myFirstFont;
     src: url(8bitOperatorPlus8-Regular.ttf);
@@ -19,6 +20,7 @@ h1 {
 p {
     font-family: myFirstFont;
     font-size: 30px;
+    border-color: white;
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -43,10 +45,9 @@ img {
 }
 
 .icon {
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    position: relative;
-    display: inline-block; /* Make the width of box same as image */
+    border-color: white;
 }
 
 .grid {
@@ -69,7 +70,7 @@ img {
 }
 
 button {
-    background-color: #666699;
+    background: linear-gradient(to bottom, #666699 0%, #000066 100%);
     border: none;
     color: black;
     padding: 15px 32px;
@@ -79,8 +80,8 @@ button {
     font-family: myFirstFont;
     font-size: 60px;
     border-radius: 6px;
-    width: 20%;
     height: 100%;
+    max-width: 100%;
 }
 
 a {
@@ -110,3 +111,8 @@ a {
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+@media only screen and (max-width:600px){
+    button{
+        width:100%;
+    }
+}
