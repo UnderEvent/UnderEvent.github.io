@@ -3,6 +3,9 @@ body {
     background-repeat:repeat;
     background-size:contain;
     background-position:center;
+    font-family: myFirstFont;
+    color: white;
+    text-align: center;
 }
 
 @font-face {
@@ -35,6 +38,7 @@ div {
 img {
     width: 50%;
     height: auto;
+    color: white;
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
     image-rendering: -moz-crisp-edges;          /* Firefox                        */
     image-rendering: -o-crisp-edges;            /* Opera                          */
@@ -48,6 +52,7 @@ img {
     max-width: 100%;
     height: auto;
     border-color: white;
+    border-radius: 3%;
 }
 
 .grid {
@@ -60,7 +65,10 @@ img {
 }
 
 .item img {
-    width:100%;
+    max-width:100%;
+    width: 70;
+    margin-left: auto;
+    margin-right: auto;
     /* Causes the button to sit below the img */
     display:block;
 }
@@ -115,4 +123,9 @@ a {
     button{
         width:100%;
     }
+}
+
+.button-icons {
+    max-width: 100%;
+    height: auto;
 }
