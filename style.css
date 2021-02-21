@@ -64,19 +64,13 @@ img {
 .grid {
     /* Specifies css grid to be used */
     display:grid; 
-    /* Specifies the number of columns and sizes in the grid */
-    grid-template-columns: 1fr 1fr;
-    /* Specifies spacing between grid cells */
-    grid-gap:1rem;
 }
 
 .item img {
     max-width:100%;
-    width: 70;
-    margin-left: auto;
-    margin-right: auto;
     /* Causes the button to sit below the img */
-    display:block;
+    display: flex;
+    flex-direction: column;
 }
   
 .item button {
@@ -84,7 +78,7 @@ img {
 }
 
 button {
-    background: linear-gradient(to bottom, #666699 0%, #000066 100%);
+    background: rgb(100, 72, 133);
     border: none;
     color: black;
     padding: 15px 32px;
