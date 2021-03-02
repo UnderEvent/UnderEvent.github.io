@@ -26,3 +26,4 @@ if (distance < 0) {
     document.getElementById("demo").innerHTML = "EXPIRED";
 }
 }, 1000);
+

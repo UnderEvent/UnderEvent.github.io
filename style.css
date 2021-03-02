@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-image:url('bg.png');
+    background-image:url('image0.png');
     background-repeat:repeat;
     background-size:contain;
     background-position:center;
@@ -26,16 +26,15 @@ h1 {
     word-wrap: break-word;
 }
 
-p {
-    font-family: myFirstFont;
-    font-size: 30px;
-    border-color: white;
-    padding: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 50%; 
-    max-height: 100%;
+@keyframes bg {
+	from, to {
+		transform: translateY(30vh);
+	}
+	80% {
+		transform: translateY(15vh);
+	}
 }
+
 
 div {
     padding: 30px;
@@ -54,11 +53,18 @@ img {
     -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
-.icon {
-    max-width: 100%;
-    height: auto;
-    border-color: white;
-    border-radius: 3%;
+.game:hover {
+    background-color: #bbbbbb;
+    box-shadow: 0px 15px 20px rgba(34, 34, 34, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.game {
+    width: 100%;
+    cursor:pointer;
+    box-shadow: 0px 16px rgb(21, 53, 78);
+    transition: all 0.3s ease 0s;
 }
 
 .grid {
@@ -73,10 +79,6 @@ img {
     flex-direction: column;
 }
   
-.item button {
-    width:60%;
-}
-
 button {
     background: rgb(100, 72, 133);
     border: none;
@@ -129,3 +131,24 @@ a {
     max-width: 100%;
     height: auto;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 50%;
+    grid-template-rows: auto auto;
+}
+
+
+p {
+    font-family: myFirstFont;
+    font-size: 30px;
+    border-color: white;
+    padding: 30px;
+    max-width: 50%; 
+    max-height: 100%;
+    text-align: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
